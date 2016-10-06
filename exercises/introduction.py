@@ -8,6 +8,7 @@ def repeat(string, num):
     """
     return (string * num)
 
+
 def bouncer(items):
     """Tar bort alla värden i items (arg 1) som evalueras till False."""
     result = []
@@ -15,7 +16,6 @@ def bouncer(items):
         if item:
             result.append(item)
     return result
-
 
 
 def rovarsprak(string):
@@ -26,22 +26,25 @@ def rovarsprak(string):
 
     `Wikipedia<https://sv.wikipedia.org/wiki/R%C3%B6varspr%C3%A5ket>`_
     """
-    result = strang
-    consonants = (q, w, r, t, p, s, d, f, g, h, j, k, l, z, x, c, v, b, n, m)
-    if char in consonants:
-        
-
-    return strang
+    # result = strang
+    # consonants = ('q, w, r, t, p, s, d, f, g, h, j,
+    #               k, l, z, x, c, v, b, n, m')
+    # if char in consonants:
+    #
+    #     result.append()
+    #
+    # return strang
+    pass
 
 
 def area(width, height):
     """Returnerar arean av en figur med bredden 'width' och höjden 'height'."""
-    pass
+    return width * height
 
 
 def to_seconds(time):
     """Returnerar en float `time` (timmar) till sekunder."""
-    pass
+    return time * 3600
 
 
 def is_of_age(age):
@@ -51,7 +54,12 @@ def is_of_age(age):
 
 def vowel(character):
     """Returnerar true om 'character' är en vokal, annart false."""
-    pass
+    x = ['a, o, u, å, e, i, y, ä, ö']
+    for x in character:
+        if x in character:
+            return True
+        else:
+            return False
 
 
 def reverse(words):
